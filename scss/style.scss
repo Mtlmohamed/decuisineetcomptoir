@@ -25,11 +25,14 @@ and (max-device-width : 480px) {
     }
 }
 
-/* Scrollable image containers for both vertical and horizontal scrolling */
+/* Scrollable image containers with vertical scrolling only */
 .scrollable-container {
     width: 100%; /* Set the width of the container to 100% */
     height: auto; /* Allow the height to adjust automatically */
-    overflow: scroll; /* Enable both vertical and horizontal scrolling */
+    max-width: 300px; /* Set the maximum width as needed */
+    max-height: 200px; /* Set the maximum height as needed */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: scroll; /* Hide horizontal scrolling */
 }
 
 /* Desktops and laptops ----------- */
@@ -41,6 +44,7 @@ and (min-width : 1224px) {
         max-height: 200px; /* Adjust the maximum height for desktop */
     }
 }
+
 
 html {
 	// overflow-x: hidden;
