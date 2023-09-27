@@ -9,25 +9,10 @@ $black: #000000;
 
 $primary: #00b0c7;
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    /* Styles for smartphones */
-    .home-slider {
-        /* Adjust styles for smartphones */
-        background-color: #f2f2f2; /* Example background color */
-    }
-    .one-third {
-        /* Adjust styles for the one-third div */
-    }
-    .one-forth {
-        /* Adjust styles for the one-forth div */
-    }
-}
+
 /* Default styles for all screen sizes */
 .one-third {
-    background-size: cover; /* Default background size */
+    background-size: cover; /* Default background size for desktop */
 }
 
 /* Media query for smartphones (portrait and landscape) */
@@ -36,6 +21,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
     .one-third {
         background-size: contain; /* Smaller background size for smartphones */
+        background-position: center center; /* Center the background image */
     }
 }
 
@@ -56,22 +42,6 @@ and (min-width : 1224px) {
         max-width: 300px; /* Adjust the maximum width for desktop */
         max-height: 200px; /* Adjust the maximum height for desktop */
     }
-}
-
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-@mixin transition($transition) {
-    -moz-transition:    all $transition ease;
-    -o-transition:      all $transition ease;
-    -webkit-transition: all $transition ease;
-    -ms-transition: 		all $transition ease;
-    transition:         all $transition ease;
 }
 
 html {
