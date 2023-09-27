@@ -26,10 +26,18 @@ and (max-device-width : 480px) {
     }
 }
 
-/* Smartphones (landscape) ----------- */
+/* Default styles for all screen sizes */
+.one-third {
+    background-size: cover; /* Default background size */
+}
+
+/* Media query for smartphones (portrait and landscape) */
 @media only screen 
-and (min-width : 321px) {
-    /* Styles for smartphones in landscape mode */
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .one-third {
+        background-size: contain; /* Smaller background size for smartphones */
+    }
 }
 
 /* Smartphones (portrait) ----------- */
