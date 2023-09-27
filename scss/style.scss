@@ -29,8 +29,6 @@ and (max-device-width : 480px) {
 .scrollable-container {
     width: 100%; /* Set the width of the container to 100% */
     height: auto; /* Allow the height to adjust automatically */
-    max-width: 300px; /* Set the maximum width as needed */
-    max-height: 200px; /* Set the maximum height as needed */
     overflow: scroll; /* Enable both vertical and horizontal scrolling */
 }
 
