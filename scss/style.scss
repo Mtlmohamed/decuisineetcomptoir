@@ -25,7 +25,6 @@ and (max-device-width : 480px) {
         /* Adjust styles for the one-forth div */
     }
 }
-
 /* Default styles for all screen sizes */
 .one-third {
     background-size: cover; /* Default background size */
@@ -42,45 +41,23 @@ and (max-device-width : 480px) {
 
 /* Scrollable image containers for both vertical and horizontal scrolling */
 .scrollable-container {
-    width: 300px; /* Set the width of the container as needed */
-    height: 200px; /* Set the height of the container as needed */
-    overflow: auto; /* Enable both vertical and horizontal scrolling */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-    /* Styles for smartphones in portrait mode */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-    /* Styles for iPads */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-    /* Styles for iPads in landscape mode */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-    /* Styles for iPads in portrait mode */
+    width: 100%; /* Set the width of the container to 100% */
+    height: auto; /* Allow the height to adjust automatically */
+    max-width: 300px; /* Set the maximum width as needed */
+    max-height: 200px; /* Set the maximum height as needed */
+    overflow: scroll; /* Enable both vertical and horizontal scrolling */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
     /* Styles for desktops and laptops */
+    .scrollable-container {
+        max-width: 300px; /* Adjust the maximum width for desktop */
+        max-height: 200px; /* Adjust the maximum height for desktop */
+    }
 }
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
