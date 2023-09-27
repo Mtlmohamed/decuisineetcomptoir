@@ -9,21 +9,27 @@ $black: #000000;
 
 $primary: #00a9c7;
 
-/* Default styles for desktop */
-.one-third.img {
-    background-image: url('myimages/kitchen1-desktop.jpg'); /* Desktop image URL */
+
+
+/* Default styles for all screen sizes */
+.home-slider {
+    /* Your default styles here */
+    background-image: url('myimages/background.jpg'); /* Example background image */
 }
 
-.one-third.img:after {
-    content: "";
-    display: block;
-    padding-top: 66.6667%; /* This maintains the aspect ratio of the image */
+/* Styles for mobile devices (320px–480px) */
+@media (max-width: 480px) {
+    .home-slider {
+        /* Your mobile-specific styles here */
+        background-color: #f2f2f2; /* Example background color */
+    }
 }
 
-/* Media query for mobile screens */
-@media (max-width: 767px) {
-    .one-third.img {
-        background-image: url('myimages/kitchen1-mobile.jpg'); /* Mobile image URL */
+/* Styles for desktops and large screens (1025px–1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .home-slider {
+        /* Your desktop-specific styles here */
+        font-size: 18px; /* Example font size */
     }
 }
 
