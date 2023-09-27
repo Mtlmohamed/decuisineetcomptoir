@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<script>
-		// Check if the device width is less than or equal to 480px (adjust as needed)
-		if (window.innerWidth <= 480) {
-		  // Find all elements with the class 'slider-item' and remove the transition property
-		  var sliderItems = document.querySelectorAll('.slider-item');
-		  sliderItems.forEach(function(item) {
-			item.style.transition = 'none';
-		  });
-		}
-	  </script>
     <title>Decuisine et Comptoir</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -59,19 +49,19 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <!-- This is the section for laptops and desktops -->
-	<section class="home-slider js-fullheight owl-carousel bg-white">
+    
+    <section class="home-slider js-fullheight owl-carousel bg-white">
 		<div class="slider-item js-fullheight">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
-					data-scrollax-parent="true">
-					<div class="one-third order-md-last img js-fullheight scrollable-container"
-						style="background-image:url(myimages/kitchen1.jpg);">
+					 data-scrollax-parent="true">
+					<div class="one-third order-md-last img js-fullheight"
+						 style="background-image:url(myimages/kitchen1.jpg);">
 						<h3 class="vr">Best Designs</h3>
 					</div>
 					<div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
-						data-scrollax=" properties: { translateY: '70%' }">
+						 data-scrollax=" properties: { translateY: '70%' }">
 						<div class="text">
 							<h1 class="mb-4">We Love <br>Modern <br> Designs</h1>
 							<p>Immerse yourself in luxury with our <br> handcrafted kitchen cabinets <br> and custom quartz countertops.</p>
@@ -82,17 +72,17 @@
 			</div>
 		</div>
 	
-		<div class="slider-item js-fullheight">
+		<div class="slider-item js-fullheight d-none d-md-block">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end"
-					data-scrollax-parent="true">
-					<div class="one-third order-md-last img js-fullheight scrollable-container"
-						style="background-image:url(myimages/bathroom2.jpg);">
+					 data-scrollax-parent="true">
+					<div class="one-third order-md-last img js-fullheight"
+						 style="background-image:url(myimages/bathroom2.jpg);">
 						<h3 class="vr">Since - 2016</h3>
 					</div>
 					<div class="one-forth d-flex js-fullheight align-items-center ftco-animate"
-						data-scrollax=" properties: { translateY: '70%' }">
+						 data-scrollax=" properties: { translateY: '70%' }">
 						<div class="text">
 							<h1 class="mb-4">Creating Your Dream Kitchen<br> One Design at a Time</h1>
 							<p>Experience the art of cooking in style with<br> our meticulously designed custom kitchens.</p>
@@ -103,8 +93,6 @@
 			</div>
 		</div>
 	</section>
-	
-	
 		
 		<section class="ftco-section ftc-no-pb">
 			<div class="container">

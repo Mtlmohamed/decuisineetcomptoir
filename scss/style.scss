@@ -9,19 +9,6 @@ $black: #000000;
 
 $primary: #0033c7;
 
-/* Default styles for all screen sizes */
-.slider-item {
-    transition: background-image 0.5s ease-in-out; /* Default transition for desktop */
-}
-
-/* Media query for smartphones (portrait and landscape) */
-@media only screen and (max-width: 480px) {
-    /* Add a class to disable the transition for smartphones */
-    .disable-transition .slider-item {
-        transition: none; /* Remove transition for smartphones */
-    }
-}
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
