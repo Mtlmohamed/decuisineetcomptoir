@@ -16,11 +16,12 @@ $primary: #0033c7;
 
 /* Media query for smartphones (portrait and landscape) */
 @media only screen and (max-width: 480px) {
-    /* Remove the transition for smartphones */
-    .slider-item {
+    /* Add a class to disable the transition for smartphones */
+    .disable-transition .slider-item {
         transition: none; /* Remove transition for smartphones */
     }
 }
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
