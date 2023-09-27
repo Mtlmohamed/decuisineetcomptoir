@@ -9,12 +9,19 @@ $black: #000000;
 
 $primary: #0033c7;
 
+/* Default styles for all screen sizes */
+.slider-item {
+    transition: background-image 0.5s ease-in-out; /* Default transition for desktop */
+}
+
+/* Media query for smartphones (portrait and landscape) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Hide the second slider item on mobile */
-    .mobile-hide {
-        display: none;
+    /* Remove the transition for smartphones */
+    .slider-item {
+        transition: none;
     }
 }
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
