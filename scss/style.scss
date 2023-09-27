@@ -15,35 +15,14 @@ $primary: #00b0c7;
     background-size: cover; /* Default background size for desktop */
 }
 
-/* Media query for smartphones (portrait and landscape) */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    .one-third {
-        background-size: contain; /* Smaller background size for smartphones */
-        background-position: center center; /* Center the background image */
+<!-- Media query to hide the section for phones -->
+<style>
+@media only screen and (max-width: 480px) {
+    .home-slider {
+        display: none;
     }
 }
 
-/* Scrollable image containers with vertical scrolling only */
-.scrollable-container {
-    width: 100%; /* Set the width of the container to 100% */
-    height: auto; /* Allow the height to adjust automatically */
-    max-width: 300px; /* Set the maximum width as needed */
-    max-height: 200px; /* Set the maximum height as needed */
-    overflow-y: scroll; /* Enable vertical scrolling */
-    overflow-x: scroll; /* Hide horizontal scrolling */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-    /* Styles for desktops and laptops */
-    .scrollable-container {
-        max-width: 300px; /* Adjust the maximum width for desktop */
-        max-height: 200px; /* Adjust the maximum height for desktop */
-    }
-}
 
 
 html {
