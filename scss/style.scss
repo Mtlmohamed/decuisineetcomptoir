@@ -7,23 +7,23 @@ $white: #fff;
 $black: #000000;
 // $darken: #3a4348;
 
-$primary: #00b0c7;
+$primary: #0033c7;
 
 
-/* Default styles for all screen sizes */
-.one-third {
-    background-size: cover; /* Default background size for desktop */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
 }
 
-<!-- Media query to hide the section for phones -->
-<style>
-@media only screen and (max-width: 480px) {
-    .home-slider {
-        display: none;
-    }
+@mixin transition($transition) {
+    -moz-transition:    all $transition ease;
+    -o-transition:      all $transition ease;
+    -webkit-transition: all $transition ease;
+    -ms-transition: 		all $transition ease;
+    transition:         all $transition ease;
 }
-
-
 
 html {
 	// overflow-x: hidden;
