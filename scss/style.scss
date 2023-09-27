@@ -9,6 +9,63 @@ $black: #000000;
 
 $primary: #0033c7;
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* Styles for smartphones */
+    .home-slider {
+        /* Adjust styles for smartphones */
+        background-color: #f2f2f2; /* Example background color */
+    }
+    .one-third {
+        /* Adjust styles for the one-third div */
+    }
+    .one-forth {
+        /* Adjust styles for the one-forth div */
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    /* Styles for smartphones in landscape mode */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    /* Styles for smartphones in portrait mode */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    /* Styles for iPads */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    /* Styles for iPads in landscape mode */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    /* Styles for iPads in portrait mode */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    /* Styles for desktops and laptops */
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
