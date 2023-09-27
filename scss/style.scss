@@ -9,6 +9,12 @@ $black: #000000;
 
 $primary: #0033c7;
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Hide the second slider item on mobile */
+    .mobile-hide {
+        display: none;
+    }
+}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
