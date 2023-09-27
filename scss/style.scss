@@ -11,14 +11,14 @@ $primary: #0033c7;
 
 /* Default styles for all screen sizes */
 .slider-item {
-    transition: background-image 0.5s ease-in-out; /* Default transition for desktop */
+    transition: background-image 0.5s ease-in-out !important; /* Default transition for desktop */
 }
 
 /* Media query for smartphones (portrait and landscape) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Remove the transition for smartphones */
     .slider-item {
-        transition: none;
+        transition: none !important;
     }
 }
 
